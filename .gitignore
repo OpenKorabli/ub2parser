@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+/dist/
+/build/
+*.egg-info/
+.eggs/
+*.egg
+
+# Virtual environments
+.env/
+.venv/
+venv/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Agent metadata
+.reasonix/

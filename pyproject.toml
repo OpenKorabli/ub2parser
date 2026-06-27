@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ub2parser"
+version = "0.1.2"
+description = "Parser for Mir Korabley Unbound 2 (.unbound) UI framework definition files — serialization and deserialization with perfect round-trip fidelity"
+readme = "README.md"
+license = "LGPL-3.0-only"
+license-files = ["LICENSE"]
+authors = [
+    {name = "VulpeStela"}
+]
+keywords = [
+    "unbound",
+    "unbound2",
+    "mir-korabley",
+    "world-of-warships",
+    "parser",
+    "serializer",
+    "ui-framework",
+    "s-expression",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Markup",
+    "Topic :: Games/Entertainment",
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/OpenKorabli/ub2parser"
+Repository = "https://github.com/OpenKorabli/ub2parser"
+Issues = "https://github.com/OpenKorabli/ub2parser/issues"
+
+[project.scripts]
+ub2parser = "ub2parser.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ub2parser*"]
+
+[tool.setuptools.package-data]
+ub2parser = ["py.typed"]
